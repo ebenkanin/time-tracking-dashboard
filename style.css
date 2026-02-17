@@ -1,0 +1,71 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+@import 'tailwindcss';
+
+@theme{
+
+    --font-Rubik:"Rubik", sans-serif;
+    --color-work:hsl(15,100%,70%);
+    --color-play:hsl(195,74%,62%);
+    --color-study:hsl(348,100%,68%);
+    --color-exercise:hsl(145,58%,55%);
+    --color-social:hsl(264,64%,52%);
+    --color-self-care:hsl(43,84%,65%);
+    --color-inner-div:hsl(235,46%,20%);
+    --color-body:hsl(226,43%,10%);
+    --color-profile:hsl(246,80%,60%);
+
+}
+
+
+.icon-work::before {
+  
+  background-image: url('/images/icon-work.svg');
+}
+
+
+.icon-exercise::before {
+  
+  background-image: url('/images/icon-exercise.svg');
+}
+
+
+
+.icon-play::before {
+ 
+  background-image: url('/images/icon-play.svg');
+}
+
+
+.icon-social::before {
+ 
+  background-image: url('/images/icon-social.svg');
+}
+
+
+.icon-study::before {
+  
+  background-image: url('/images/icon-study.svg');
+
+
+}
+
+.icon-self-care::before {
+ 
+  background-image: url('/images/icon-self-care.svg');
+}
+
+
+
+.icon-work::before,
+.icon-play::before,
+.icon-study::before,
+.icon-exercise::before,
+.icon-social::before,
+.icon-self-care::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+}

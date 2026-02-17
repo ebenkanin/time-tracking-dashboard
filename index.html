@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/output.css">
+    <title>Time Tracking dashboard</title>
+</head>
+<body class="w-screen min-h-screen xl:h-screen bg-body  flex flex-col items-center justify-center overflow-x-hidden ">
+
+    <!-- Main title goes here -->
+
+    <header class=" w-full ">
+
+        <h1 class="hidden font-Rubik capitalize">Time Tracking Dashboard </h1>
+
+    </header>
+
+    <!-- Body text goes here -->
+
+     <main class=" w-91.25 md:w-150.25 lg:w-200 xl:w-280 h-auto md:h-auto lg:h-202.5 xl:h-125  flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 grid-rows-7 md:grid-rows-5  lg:grid-rows-3 xl:grid-rows-2 gap-6 main ">
+
+        <div class="profile-card bg-inner-div w-full h-68.5 xl:h-auto  md:col-span-2 lg:col-span-3 xl:col-span-1 xl:row-span-2  md:w-full  grid grid-rows-3 grid-cols-1 rounded-md md:rounded-xl   ">
+
+            <div class=" row-span-2 bg-profile grid grid-cols-3 rounded-md md:rounded-xl p-5 ">
+
+                <div class="img-container w-full xl:col-span-3 flex items-start justify-start p-4  ">
+                    <img src="./images/image-jeremy.png" class="w-full h-3/5 md:w-16 md:h-16 xl:w-20 xl:h-20 rounded-full outline-white outline-2 " alt="">
+
+                </div> 
+
+                <div class="profile-details col-span-2 p-4 space-y-2.5">
+
+                    <h2 class="font-Rubik text-base md:text-lg text-gray-300">
+
+                        Report for
+
+                    </h2>
+
+                    <h3 class="text-3xl md:text-3xl xl:text-4xl font-Rubik -leading-4  text-white"> Jeremy  <br class="hidden xl:block"> Robson</h3>
+
+
+
+                </div>
+
+            </div>
+
+            <div class="filters h-full w-full">
+
+                <ul class="flex  flex-row xl:flex-col  justify-around items-center xl:justify-around xl:items-start h-full w-full xl:p-8">
+                    <li><button class=" btn daily  text-base cursor-pointer text-gray-200 hover:text-white  focus:outline-0 ">Daily</button></li>
+                    <li><button class=" btn weekly text-base cursor-pointer text-gray-200 hover:text-white focus:outline-0">Weekly</button></li>
+                    <li><button class="btn monthly text-base cursor-pointer text-gray-200 hover:text-white focus:outline-0">Monthly</button></li>
+
+                
+                </ul>
+            </div>
+
+        </div>
+
+
+        <template class="template">
+
+            <div class=" card h-44 md:h-auto  relative before:absolute before:top-1.5 before:right-1.5 before:content-[] before:w-14  before:h-14 flex justify-end items-end rounded-lg cursor-pointer">
+
+                <div class="inner-div h-[80%] w-full z-10 rounded-md p-5 flex flex-col justify-around bg-inner-div ">
+
+                    <div class="title-bar w-full h-10 flex justify-between items-center ">
+
+                        <h3 class=" title text-base font-Rubik text-white ">Work</h3>
+                        <img src="./images/icon-ellipsis.svg" alt="">
+
+                    </div>
+
+                    <div class="h-full w-full  flex items-end justify-between md:flex-col md:justify-center md:items-start">
+
+                        <p class="main-data  font-Rubik text-white text-5xl font-light">32hrs</p>
+
+                        <p class="previous sub-text text-sm text-white font-Rubik mt-1"> Last week- <span class="drilled-down text-sm text-white font-Rubik">36hrs</span></p>
+
+                    </div>
+
+                
+
+                </div>
+
+         </div> 
+            
+        </template>
+
+
+ 
+
+      
+
+
+    
+     </main>
+
+
+
+     <footer>
+        
+     </footer>
+
+    
+    <script src="./main.js">   </script>
+</body>
+</html>
